@@ -12,7 +12,10 @@ import SectionTitle from '../../components/ui/SectionTitle.vue';
         CON LA BENDICIÓN DE DIOS
       </span>
 
-      <div class="cross">✝</div>
+      <div class="cross">
+        <span></span>
+        <span></span>
+        </div>
 
       <p class="invitation-text">
         Tenemos el honor de invitarte al
@@ -64,11 +67,33 @@ import SectionTitle from '../../components/ui/SectionTitle.vue';
 }
 
 .cross {
-  margin: 30px 0;
-  color: var(--color-gold);
-  font-size: 2.3rem;
+  position: relative;
+  width: 30px;
+  height: 38px;
+  margin: 30px auto;
 }
 
+.cross span {
+  position: absolute;
+  display: block;
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+
+.cross span:first-child {
+  width: 3px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cross span:last-child {
+  width: 22px;
+  height: 3px;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .invitation-text {
   margin-bottom: 25px;
   font-family: var(--font-title);
