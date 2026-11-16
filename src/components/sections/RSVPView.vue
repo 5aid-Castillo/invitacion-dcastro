@@ -10,17 +10,17 @@ const attendance = ref('Sí, asistiré');
 const companions = ref(0);
 
 function confirmAttendance() {
-  if (!guestName.value.trim()) {
+  /* if (!guestName.value.trim()) {
     alert('Por favor, escribe tu nombre.');
     return;
-  }
+  } */
 
   const message = [
     '¡Hola! Quiero confirmar mi asistencia al bautizo.',
     '',
-    `Nombre: ${guestName.value}`,
+  /*   `Nombre: ${guestName.value}`,
     `Asistencia: ${attendance.value}`,
-    `Acompañantes: ${companions.value}`
+    `Acompañantes: ${companions.value}` */
   ].join('\n');
 
   const url = `https://wa.me/${
@@ -43,7 +43,7 @@ function confirmAttendance() {
 
       <form @submit.prevent="confirmAttendance">
 
-        <div class="form-group">
+      <!--   <div class="form-group">
           <label for="guest">Nombre completo</label>
 
           <input
@@ -74,7 +74,7 @@ function confirmAttendance() {
             min="0"
             max="20"
           />
-        </div>
+        </div> -->
 
         <button type="submit" class="primary-button submit-button">
           <MessageCircle :size="19"/>

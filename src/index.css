@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap');
+
 
 :root {
   font-family: 'DM Sans', sans-serif;
@@ -10,8 +12,11 @@
   --color-ivory: #F8F6F0;
   --color-text: #55594F;
   --color-white: #FFFFFF;
-
+  
+  --font-title: 'Cormorant Garamond', serif;
   --font-title: 'Playfair Display', serif;
+--font-name: 'Great Vibes', cursive;
+--font-body: 'DM Sans', sans-serif;
 
   --shadow-soft: 0 8px 30px rgba(53, 70, 59, 0.08);
 }

@@ -1,9 +1,9 @@
-<!-- 
+
 <script setup lang="ts">
 import { ref, onUnmounted } from 'vue';
 import { Music2, Pause, Play } from 'lucide-vue-next';
 
-import backgroundMusic from './assets/music/background-music.mp3';
+import backgroundMusic from '../../assets/corazón-de-niño.mp3';
 
 const audio = ref<HTMLAudioElement | null>(null);
 const isPlaying = ref(false);
@@ -130,4 +130,3 @@ onUnmounted(() => {
   }
 }
 </style>
- -->

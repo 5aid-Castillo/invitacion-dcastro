@@ -12,20 +12,24 @@ import SectionTitle from '../../components/ui/SectionTitle.vue';
         CON LA BENDICIÓN DE DIOS
       </span>
 
-      <div class="cross">
+      <!-- <div class="cross">
         <span></span>
         <span></span>
-        </div>
+        </div> -->
 
       <p class="invitation-text">
-        Tenemos el honor de invitarte al
+        Tenemos el honor de invitarte a
       </p>
 
-      <SectionTitle
+      <p class="eyebrow">Un día especial</p>
+      <p class="baby-name">{{ invitation.baby.name }}</p>
+      <p class="section-subtitle">Que la luz de Dios guíe sus pasos y la Madre Tierra nutra sus sueños</p>
+
+      <!-- <SectionTitle
         eyebrow="Un día especial"
         :title="invitation.baby.name"
-        subtitle="A celebrar el sacramento de su bautismo"
-      />
+        subtitle="Que la luz de Dios guíe sus pasos y la Madre Tierra nutra sus sueños"
+      /> -->
 
       <p class="hero-phrase">
         "{{ invitation.baby.phrase }}"
@@ -99,6 +103,15 @@ import SectionTitle from '../../components/ui/SectionTitle.vue';
   font-family: var(--font-title);
   font-size: 1.2rem;
 }
+.baby-name {
+  margin: 15px 0;
+  font-family: var(--font-name);
+  font-size: clamp(4rem, 11vw, 7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-sage-dark);
+  overflow-wrap: anywhere;
+}
 
 .hero-phrase {
   margin: 25px 0;
@@ -118,6 +131,22 @@ import SectionTitle from '../../components/ui/SectionTitle.vue';
   max-width: 450px;
   margin: 0 auto 30px;
   line-height: 1.9;
+}
+.section-title {
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-gold);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section-divider {
+  margin: 20px auto;
 }
 
 @media (max-width: 600px) {

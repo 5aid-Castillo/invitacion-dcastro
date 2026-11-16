@@ -6,7 +6,8 @@ import CountdownView from '../sections/CountdownView.vue';
 import EventView from '../sections/EventView.vue';
 import HotelsView from '../sections/HotelsView.vue';
 import RSVPView from '../sections/RSVPView.vue';
-/* import MusicPlayer from './MusicPlayer.vue'; */
+import MusicPlayer from './MusicPlayer.vue';
+import GalleryView from '../sections/GalleryView.vue';
 </script>
 
 <template>
@@ -23,12 +24,14 @@ import RSVPView from '../sections/RSVPView.vue';
 
     <RSVPView />
 
+    <GalleryView />
+
     <footer class="footer">
       <p>Con cariño, esperamos compartir este día contigo.</p>
       <span>♡</span>
     </footer>
 
-   <!--  <MusicPlayer /> -->
+    <MusicPlayer />
   </main>
 </template>
 

@@ -4,7 +4,7 @@ import type { InvitationData } from '@/types/invitation';
 export const invitation: InvitationData = {
   baby: {
     name: 'Gael',
-    date: '19 de diciembre de 2026',
+    date: '19/12/2026',
     phrase: 'Un pequeño milagro, una gran bendición.',
     message:
       'Con mucha alegría queremos invitarte a celebrar un momento muy especial en nuestras vidas: el bautizo de nuestro pequeño.'
@@ -58,7 +58,7 @@ export const invitation: InvitationData = {
   ],
 
   rsvp: {
-    whatsappNumber: '522212054136',
+    whatsappNumber: '522381509217',
     message: 'Hola, deseo confirmar mi asistencia al bautizo.'
   },
 
