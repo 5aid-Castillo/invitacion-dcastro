@@ -74,7 +74,7 @@ onUnmounted(() => {
 <style scoped>
 .music-player {
   position: fixed;
-  right: 22px;
+  left: 22px;
   bottom: 22px;
   z-index: 1000;
 
@@ -125,7 +125,7 @@ onUnmounted(() => {
 
 @media (max-width: 450px) {
   .music-player {
-    right: 14px;
+    left: 14px;
     bottom: 14px;
   }
 }
