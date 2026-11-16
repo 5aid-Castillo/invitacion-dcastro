@@ -28,14 +28,14 @@ export const invitation: InvitationData = {
     mass: {
       name: 'Parroquia de San Juan Evangelista',
       time: '13:00 PM',
-      address: 'Dirección de la iglesia',
+      address: 'Calle 12, Centro, 75980',
       mapsUrl: 'https://maps.app.goo.gl/Kc8n9wVimA7VRpnSA'
     },
 
     reception: {
       name: 'Salón MIBEN',
       time: '03:00 PM',
-      address: 'Dirección del salón',
+      address: 'Donato Bravo Izquierdo, 75980',
       mapsUrl: 'https://maps.app.goo.gl/14GtWpo6z8kkqKaQ9'
     }
   },
@@ -43,14 +43,14 @@ export const invitation: InvitationData = {
   hotels: [
     {
       name: 'Hotel Cazadores',
-      address: 'Dirección del hotel',
+      address: 'Emiliano Zapata, 75980',
       phone: '0000000000',
       mapsUrl: 'https://maps.app.goo.gl/7CE3T3torC55D8Mm6',
       website: ''
     },
     {
       name: 'Hotel Rojo Canela',
-      address: 'Dirección del hotel',
+      address: 'Centro, 75980',
       phone: '0000000000',
       mapsUrl: 'https://maps.app.goo.gl/gZQexyjA2qG46PxK6',
       website: ''

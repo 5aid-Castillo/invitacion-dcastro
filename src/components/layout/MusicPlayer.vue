@@ -50,7 +50,7 @@ onUnmounted(() => {
     />
 
     <span class="music-label">
-      {{ isPlaying ? 'Reproduciendo' : 'Nuestra melodía' }}
+      {{ isPlaying ? '' : 'Melodía' }}
     </span>
 
     <button

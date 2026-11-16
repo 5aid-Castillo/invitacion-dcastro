@@ -7,17 +7,18 @@ import { Heart, Users, Sparkles } from 'lucide-vue-next';
 
 <template>
   <section class="invitation-section">
-    <div class="section-card">
+    <div class="section-card" v-reveal="{ direction: 'down', delay:400 }">
 
       <SectionTitle
         eyebrow="Nuestra familia"
         title="Un momento para compartir"
         subtitle="Las personas que nos acompañan en este camino tan especial."
+        v-reveal="{ direction: 'down', delay:1000 }"
       />
 
-      <Heart :size="28" class="icon"/>
+      <Heart :size="28" class="icon" v-reveal="{ direction: 'down', delay:1000 }"/>
 
-      <div class="family-group">
+      <div class="family-group" v-reveal="{ direction: 'down', delay:1000 }">
         <h3>Con amor, sus padres</h3>
 
         <div class="names">
@@ -27,7 +28,7 @@ import { Heart, Users, Sparkles } from 'lucide-vue-next';
         </div>
       </div>
 
-      <div class="family-group">
+      <div class="family-group" v-reveal="{ direction: 'down', delay:1000 }">
         <Users :size="27" class="icon"/>
 
         <h3>Madrina</h3>

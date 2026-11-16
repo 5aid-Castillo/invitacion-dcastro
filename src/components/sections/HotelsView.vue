@@ -7,15 +7,16 @@ import { Hotel, MapPin, Phone, ExternalLink } from 'lucide-vue-next';
 
 <template>
   <section class="invitation-section">
-    <div class="section-card">
+    <div class="section-card" v-reveal="{ direction: 'down', delay:400 }">
 
       <SectionTitle
         eyebrow="Para nuestros invitados"
         title="Opciones de hospedaje"
         subtitle="Compartimos algunas opciones de alojamiento para facilitar tu estancia."
+        v-reveal="{ direction: 'down', delay:1000 }"
       />
 
-      <div class="hotels-list">
+      <div class="hotels-list" v-reveal="{ direction: 'down', delay:1000 }">
 
         <article
           v-for="hotel in invitation.hotels"

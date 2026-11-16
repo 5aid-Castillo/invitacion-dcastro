@@ -20,15 +20,16 @@ const events = [
 
 <template>
   <section class="invitation-section">
-    <div class="section-card">
+    <div class="section-card"  v-reveal="{ direction: 'down', delay:400 }">
 
       <SectionTitle
         eyebrow="Detalles del evento"
         title="¿Dónde nos vemos?"
         subtitle="Nos encantará contar con tu presencia."
+        v-reveal="{ direction: 'down', delay:1000 }"
       />
 
-      <div class="events-grid">
+      <div class="events-grid"  v-reveal="{ direction: 'down', delay:1000 }">
 
         <article
           v-for="event in events"

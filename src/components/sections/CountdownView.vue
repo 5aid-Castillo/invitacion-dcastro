@@ -8,16 +8,17 @@ const countdown = useCountdown(invitation.countdown.date);
 </script>
 
 <template>
-  <section id="countdown" class="invitation-section">
+  <section id="countdown" class="invitation-section"  v-reveal="{ direction: 'down', delay:400 }">
     <div class="section-card">
 
       <SectionTitle
         eyebrow="Cuenta regresiva"
         title="Cada vez falta menos"
         subtitle="Nos llena de emoción compartir este día contigo."
+         v-reveal="{ direction: 'down', delay:1000 }"
       />
 
-      <div v-if="!countdown.finished" class="timer">
+      <div v-if="!countdown.finished" class="timer"  v-reveal="{ direction: 'down', delay:1000 }">
 
         <div class="time-box">
           <strong>{{ countdown.days }}</strong>

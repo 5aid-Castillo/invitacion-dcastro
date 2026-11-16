@@ -69,16 +69,17 @@ const currentPhoto = computed(() => {
 
 <template>
   <section class="invitation-section gallery-section">
-    <div class="section-card">
+    <div class="section-card" v-reveal="{ direction: 'down', delay:400 }">
 
       <SectionTitle
         eyebrow="Momentos especiales"
         title="Galería"
         subtitle="Pequeños momentos que llenan nuestro corazón de felicidad."
+        v-reveal="{ direction: 'down', delay:1000 }"
       />
 
 
-      <div class="gallery-icon">
+      <div class="gallery-icon" v-reveal="{ direction: 'down', delay:1000 }">
         <Images :size="25"/>
       </div>
 
@@ -106,7 +107,7 @@ const currentPhoto = computed(() => {
 
       </div>
 
-      <p class="gallery-footer">
+      <p class="gallery-footer" v-reveal="{ direction: 'down', delay:1000 }">
         Recuerdos que guardaremos por siempre ♡
       </p>
 

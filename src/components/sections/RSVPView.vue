@@ -33,12 +33,13 @@ function confirmAttendance() {
 
 <template>
   <section class="invitation-section">
-    <div class="section-card">
+    <div class="section-card" v-reveal="{ direction: 'down', delay:400 }">
 
       <SectionTitle
         eyebrow="Nos encantará verte"
         title="¿Nos acompañas?"
         subtitle="Tu presencia hará este día aún más especial. Por favor, confirma tu asistencia."
+        v-reveal="{ direction: 'down', delay:1000 }"
       />
 
       <form @submit.prevent="confirmAttendance">
@@ -76,7 +77,7 @@ function confirmAttendance() {
           />
         </div> -->
 
-        <button type="submit" class="primary-button submit-button">
+        <button type="submit" class="primary-button submit-button" v-reveal="{ direction: 'down', delay:1000 }">
           <MessageCircle :size="19"/>
           Confirmar por WhatsApp
           <Send :size="17"/>
