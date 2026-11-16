@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import SectionTitle from '@/components/ui/SectionTitle.vue';
 import {
   X,
@@ -60,6 +60,11 @@ function previousPhoto() {
   selectedPhoto.value =
     (selectedPhoto.value - 1 + photos.length) % photos.length;
 }
+
+const currentPhoto = computed(() => {
+    if(selectedPhoto.value === null) return null;
+    return photos[selectedPhoto.value] ?? null;
+})
 </script>
 
 <template>
@@ -133,8 +138,8 @@ function previousPhoto() {
 
         <div class="lightbox-content">
           <img
-            :src="photos[selectedPhoto].src"
-            :alt="photos[selectedPhoto].alt"
+            :src="currentPhoto?.src"
+            :alt="currentPhoto?.alt"
           />
 
           <span class="photo-counter">
